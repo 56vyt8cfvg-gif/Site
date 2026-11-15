@@ -11,17 +11,17 @@
 <meta name="theme-color" content="#120a04">
 <link rel="icon" href="logo.png">
 <link rel="stylesheet" href="style.css">
-<script>try{var l=localStorage.getItem('rdpSiteLang')||((navigator.language||'fr').slice(0,2)==='fr'?'fr':'en');document.documentElement.dataset.l=l;document.documentElement.lang=l}catch(e){}</script>
+<script>try{var L=['fr','en','es','de','pt','it','zh'],n=(navigator.language||'en').slice(0,2),l=localStorage.getItem('rdpSiteLang')||(L.indexOf(n)>=0?n:'en');document.documentElement.dataset.l=l;document.documentElement.lang=l}catch(e){}</script>
 </head>
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="index.html"><img src="logo.png" alt=""><span>Royaumes de poche</span></a>
   <nav class="nav">
-    <a href="index.html#jeu"><span class="fr">Le jeu</span><span class="en">The game</span></a>
-    <a href="index.html#civilisations"><span class="fr">Civilisations</span><span class="en">Civilizations</span></a>
-    <a href="index.html#images"><span class="fr">Images</span><span class="en">Screenshots</span></a>
-    <a href="assistance.html"><span class="fr">Assistance</span><span class="en">Support</span></a>
-    <div class="lang"><button data-set="fr">FR</button><button data-set="en">EN</button></div>
+    <a href="index.html#jeu"><span class="fr">Le jeu</span><span class="en">The game</span><span class="es">El juego</span><span class="de">Das Spiel</span><span class="pt">O jogo</span><span class="it">Il gioco</span><span class="zh">游戏介绍</span></a>
+    <a href="index.html#civilisations"><span class="fr">Civilisations</span><span class="en">Civilizations</span><span class="es">Civilizaciones</span><span class="de">Zivilisationen</span><span class="pt">Civilizações</span><span class="it">Civiltà</span><span class="zh">文明</span></a>
+    <a href="index.html#images"><span class="fr">Images</span><span class="en">Screenshots</span><span class="es">Imágenes</span><span class="de">Bilder</span><span class="pt">Imagens</span><span class="it">Immagini</span><span class="zh">游戏截图</span></a>
+    <a href="assistance.html"><span class="fr">Assistance</span><span class="en">Support</span><span class="es">Soporte</span><span class="de">Support</span><span class="pt">Suporte</span><span class="it">Assistenza</span><span class="zh">支持</span></a>
+    <select class="langsel" aria-label="Langue"><option value="fr">🇫🇷 FR</option><option value="en">🇬🇧 EN</option><option value="es">🇪🇸 ES</option><option value="de">🇩🇪 DE</option><option value="pt">🇵🇹 PT</option><option value="it">🇮🇹 IT</option><option value="zh">🇨🇳 中文</option></select>
   </nav>
 </div></header>
 <main class="doc"><div class="fr"><h1 class="gold">Assistance</h1><p>Un problème, une question ou une idée pour le royaume ? Écris-moi, je réponds en général sous quelques jours.</p>
@@ -42,15 +42,60 @@
 <p class="q"><b>The game is slow on my phone.</b><br>Settings → Graphics → “Fast”: no shadows and a lower resolution, smoother and easier on the battery.</p>
 <p class="q"><b>How do I change the language?</b><br>Tap the flag at the top of the main menu. The game is available in French, English, Spanish, German, Portuguese, Italian and Chinese.</p>
 <p class="q"><b>A purchase didn't arrive, or I want a refund.</b><br>Payments are handled by Apple: go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
-<p>When reporting a bug, please include your iPhone model, iOS version and what you were doing when it happened.</p></div></main>
+<p>When reporting a bug, please include your iPhone model, iOS version and what you were doing when it happened.</p></div><div class="es"><h1 class="gold">Soporte</h1><p>¿Un problema, una pregunta o una idea para el reino? Escríbeme, normalmente respondo en pocos días.</p>
+<a class="mail" href="mailto:royaumesdepoche@gmail.com?subject=Royaumes%20de%20poche">✉️ royaumesdepoche@gmail.com</a>
+<h2>Preguntas frecuentes</h2>
+<p class="q"><b>¿Cómo aprendo a jugar?</b><br>Menú principal → Tutorial. Te explica paso a paso la recolección, la construcción y los combates.</p>
+<p class="q"><b>He cambiado de teléfono, ¿cómo recupero la versión completa?</b><br>Menú principal → Versión completa → «Restaurar compras», con la misma cuenta de Apple. Es gratis.</p>
+<p class="q"><b>Mis partidas han desaparecido.</b><br>Las partidas se guardan en el teléfono. Se pierden si borras el juego o los datos del teléfono.</p>
+<p class="q"><b>El juego va lento en mi teléfono.</b><br>Ajustes → Gráficos → «Rápido»: sin sombras y con menor resolución, va más fluido y ahorra batería.</p>
+<p class="q"><b>¿Cómo cambio el idioma?</b><br>Toca la bandera en la parte superior del menú principal. El juego está en francés, inglés, español, alemán, portugués, italiano y chino.</p>
+<p class="q"><b>Una compra no ha llegado o quiero un reembolso.</b><br>Los pagos los gestiona Apple: ve a <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+<p>Si informas de un error, indica tu modelo de iPhone, tu versión de iOS y qué estabas haciendo cuando ocurrió.</p></div><div class="de"><h1 class="gold">Support</h1><p>Ein Problem, eine Frage oder eine Idee für das Königreich? Schreib mir, ich antworte meist innerhalb weniger Tage.</p>
+<a class="mail" href="mailto:royaumesdepoche@gmail.com?subject=Royaumes%20de%20poche">✉️ royaumesdepoche@gmail.com</a>
+<h2>Häufige Fragen</h2>
+<p class="q"><b>Wie lerne ich das Spiel?</b><br>Hauptmenü → Tutorial. Es erklärt Schritt für Schritt Sammeln, Bauen und Kämpfen.</p>
+<p class="q"><b>Ich habe ein neues Handy. Wie bekomme ich die Vollversion zurück?</b><br>Hauptmenü → Vollversion → „Käufe wiederherstellen“, mit demselben Apple Account. Das ist kostenlos.</p>
+<p class="q"><b>Meine Spielstände sind weg.</b><br>Spielstände werden auf dem Handy gespeichert. Sie gehen verloren, wenn das Spiel oder die Daten des Handys gelöscht werden.</p>
+<p class="q"><b>Das Spiel ruckelt auf meinem Handy.</b><br>Einstellungen → Grafik → „Schnell“: ohne Schatten und mit geringerer Auflösung läuft es flüssiger und schont den Akku.</p>
+<p class="q"><b>Wie ändere ich die Sprache?</b><br>Tippe oben im Hauptmenü auf die Flagge. Das Spiel gibt es auf Französisch, Englisch, Spanisch, Deutsch, Portugiesisch, Italienisch und Chinesisch.</p>
+<p class="q"><b>Ein Kauf ist nicht angekommen oder ich möchte eine Erstattung.</b><br>Zahlungen werden von Apple abgewickelt: Gehe zu <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+<p>Wenn du einen Fehler meldest, nenne bitte dein iPhone-Modell, deine iOS-Version und was du gerade getan hast.</p></div><div class="pt"><h1 class="gold">Suporte</h1><p>Um problema, uma pergunta ou uma ideia para o reino? Escreve-me, costumo responder em poucos dias.</p>
+<a class="mail" href="mailto:royaumesdepoche@gmail.com?subject=Royaumes%20de%20poche">✉️ royaumesdepoche@gmail.com</a>
+<h2>Perguntas frequentes</h2>
+<p class="q"><b>Como aprendo a jogar?</b><br>Menu principal → Tutorial. Explica passo a passo a recolha, a construção e os combates.</p>
+<p class="q"><b>Mudei de telemóvel, como recupero a versão completa?</b><br>Menu principal → Versão completa → «Restaurar compras», com a mesma conta Apple. É grátis.</p>
+<p class="q"><b>As minhas partidas desapareceram.</b><br>As partidas são guardadas no telemóvel. Perdem-se se apagares o jogo ou os dados do telemóvel.</p>
+<p class="q"><b>O jogo está lento no meu telemóvel.</b><br>Definições → Gráficos → «Rápido»: sem sombras e com resolução menor, fica mais fluido e poupa bateria.</p>
+<p class="q"><b>Como mudo o idioma?</b><br>Toca na bandeira no topo do menu principal. O jogo está em francês, inglês, espanhol, alemão, português, italiano e chinês.</p>
+<p class="q"><b>Uma compra não chegou ou quero um reembolso.</b><br>Os pagamentos são geridos pela Apple: vai a <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+<p>Se reportares um erro, indica o modelo do teu iPhone, a versão do iOS e o que estavas a fazer quando aconteceu.</p></div><div class="it"><h1 class="gold">Assistenza</h1><p>Un problema, una domanda o un’idea per il regno? Scrivimi, di solito rispondo in pochi giorni.</p>
+<a class="mail" href="mailto:royaumesdepoche@gmail.com?subject=Royaumes%20de%20poche">✉️ royaumesdepoche@gmail.com</a>
+<h2>Domande frequenti</h2>
+<p class="q"><b>Come imparo a giocare?</b><br>Menu principale → Tutorial. Spiega passo passo raccolta, costruzione e combattimenti.</p>
+<p class="q"><b>Ho cambiato telefono, come recupero la versione completa?</b><br>Menu principale → Versione completa → «Ripristina acquisti», con lo stesso Account Apple. È gratis.</p>
+<p class="q"><b>Le mie partite sono sparite.</b><br>Le partite sono salvate sul telefono. Si perdono se elimini il gioco o i dati del telefono.</p>
+<p class="q"><b>Il gioco va a scatti sul mio telefono.</b><br>Impostazioni → Grafica → «Veloce»: senza ombre e con risoluzione ridotta è più fluido e consuma meno batteria.</p>
+<p class="q"><b>Come cambio la lingua?</b><br>Tocca la bandiera in alto nel menu principale. Il gioco è disponibile in francese, inglese, spagnolo, tedesco, portoghese, italiano e cinese.</p>
+<p class="q"><b>Un acquisto non è arrivato o voglio un rimborso.</b><br>I pagamenti sono gestiti da Apple: vai su <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+<p>Se segnali un bug, indica il modello di iPhone, la versione di iOS e cosa stavi facendo quando è successo.</p></div><div class="zh"><h1 class="gold">支持</h1><p>遇到问题、有疑问，或者对王国有好点子？给我写信吧，我通常会在几天内回复。</p>
+<a class="mail" href="mailto:royaumesdepoche@gmail.com?subject=Royaumes%20de%20poche">✉️ royaumesdepoche@gmail.com</a>
+<h2>常见问题</h2>
+<p class="q"><b>如何学会玩？</b><br>主菜单 → 教程。会一步步讲解采集、建造和战斗。</p>
+<p class="q"><b>换了手机，怎样找回完整版？</b><br>主菜单 → 完整版 → “恢复购买”，使用同一个 Apple 账户即可，免费。</p>
+<p class="q"><b>我的存档不见了。</b><br>存档保存在手机上。删除游戏或清除手机数据后会丢失。</p>
+<p class="q"><b>游戏在我的手机上很卡。</b><br>设置 → 画质 → “快速”：关闭阴影并降低分辨率，运行更流畅也更省电。</p>
+<p class="q"><b>如何切换语言？</b><br>点击主菜单顶部的旗帜。游戏支持法语、英语、西班牙语、德语、葡萄牙语、意大利语和中文。</p>
+<p class="q"><b>购买未到账或想退款。</b><br>付款由 Apple 处理：请前往 <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>。</p>
+<p>报告问题时，请注明你的 iPhone 型号、iOS 版本以及问题发生时你在做什么。</p></div></main>
 <footer><div class="wrap">
   <div class="links">
-    <a href="assistance.html"><span class="fr">Assistance</span><span class="en">Support</span></a>
-    <a href="confidentialite.html"><span class="fr">Confidentialité</span><span class="en">Privacy</span></a>
+    <a href="assistance.html"><span class="fr">Assistance</span><span class="en">Support</span><span class="es">Soporte</span><span class="de">Support</span><span class="pt">Suporte</span><span class="it">Assistenza</span><span class="zh">支持</span></a>
+    <a href="confidentialite.html"><span class="fr">Confidentialité</span><span class="en">Privacy</span><span class="es">Privacidad</span><span class="de">Datenschutz</span><span class="pt">Privacidade</span><span class="it">Privacy</span><span class="zh">隐私</span></a>
     <a href="mailto:royaumesdepoche@gmail.com">royaumesdepoche@gmail.com</a>
   </div>
   © 2026 Maxime Bourqui · Royaumes de poche
 </div></footer>
-<script>document.querySelectorAll('[data-set]').forEach(function(b){var l=b.dataset.set;if(document.documentElement.dataset.l===l)b.classList.add('on');b.onclick=function(){document.documentElement.dataset.l=l;document.documentElement.lang=l;try{localStorage.setItem('rdpSiteLang',l)}catch(e){}document.querySelectorAll('[data-set]').forEach(function(x){x.classList.toggle('on',x.dataset.set===l)})}})</script>
+<script>(function(){var s=document.querySelector('.langsel');if(!s)return;s.value=document.documentElement.dataset.l;s.onchange=function(){var l=s.value;document.documentElement.dataset.l=l;document.documentElement.lang=l;try{localStorage.setItem('rdpSiteLang',l)}catch(e){}}})()</script>
 </body>
 </html>

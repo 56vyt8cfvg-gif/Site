@@ -17,7 +17,7 @@ h1,h2,h3{font-family:Titre,Georgia,serif;font-weight:400;letter-spacing:.3px;mar
 .nav{display:flex;gap:18px;margin-left:auto;align-items:center}
 .nav a{color:var(--txt);text-decoration:none;font-size:15px;opacity:.85}
 .nav a:hover{opacity:1;color:var(--gold)}
-.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.langsel{background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:999px;font:600 14px/1 inherit;padding:8px 10px}
 .lang button{background:none;border:0;color:var(--mut);font:600 13px/1 inherit;padding:7px 10px;cursor:pointer}
 .lang button.on{background:var(--gold2);color:#1a1208}
 @media(max-width:720px){.nav a{display:none}.brand span{display:none}}
@@ -72,7 +72,7 @@ section{padding:70px 0}
 
 /* pages de texte */
 .doc{max-width:760px;margin:0 auto;padding:50px 20px 30px}
-.doc h1{font-size:clamp(34px,6vw,48px);text-align:center;margin-bottom:6px}
+.doc h1{font-size:clamp(30px,6vw,48px);overflow-wrap:break-word;-webkit-hyphens:auto;hyphens:auto;text-align:center;margin-bottom:6px}
 .doc .date{text-align:center;color:var(--mut);font-size:14px;margin-bottom:26px}
 .doc h2{font-size:26px;color:var(--gold);margin:30px 0 8px}
 .doc p,.doc li{color:#e4d6b8}
@@ -88,5 +88,13 @@ footer a{color:var(--txt);text-decoration:none}
 footer a:hover{color:var(--gold)}
 
 /* langue */
-[data-l="en"] .fr{display:none}
-[data-l="fr"] .en{display:none}
+html:not([data-l="fr"]) .fr{display:none}
+html:not([data-l="en"]) .en{display:none}
+html:not([data-l="es"]) .es{display:none}
+html:not([data-l="de"]) .de{display:none}
+html:not([data-l="pt"]) .pt{display:none}
+html:not([data-l="it"]) .it{display:none}
+html:not([data-l="zh"]) .zh{display:none}
+
+.new{display:inline-block;background:#b0281f;color:#fff;font-weight:800;font-size:13px;letter-spacing:1.5px;border-radius:10px;padding:5px 14px;margin-bottom:10px}
+.vid{max-width:360px;margin:0 auto 26px;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 40px rgba(0,0,0,.6);background:#000}.vid video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover}
