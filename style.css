@@ -140,3 +140,11 @@ body.mopen .mmenu{opacity:1;pointer-events:auto}body.mopen .mmp{transform:none}
 @media(max-width:720px){.hero2{align-items:stretch}.hin{display:flex;flex-direction:column;justify-content:space-between;min-height:calc(100svh - 110px);padding-top:6px}
 .hin .logo2{margin:0 auto}.hin .bot2{margin-top:auto}}
 .hero2 .shade{background:linear-gradient(180deg,rgba(14,8,3,.55) 0%,rgba(14,8,3,0) 26%,rgba(14,8,3,0) 50%,rgba(14,8,3,.88) 72%,var(--bg) 100%)}
+
+.soonsec{background:radial-gradient(ellipse at 50% 0%,#3a1410 0%,var(--bg) 70%);border-top:1px solid var(--line)}
+.new.soon{background:linear-gradient(90deg,#6b1d14,#a8221a);color:#ffd9a0}
+.fac .im{filter:saturate(.85) contrast(1.05)}
+.nav a{white-space:nowrap}
+.fac.snow .im{filter:grayscale(.75) brightness(1.35) contrast(.9) sepia(.05) hue-rotate(180deg) saturate(1.3)}
+.top .nav{margin-left:22px}
+@media(max-width:700px){.soonsec .civs{grid-template-columns:1fr 1fr;gap:10px}.soonsec .civ h3{font-size:19px}.soonsec .civ .tx{padding:10px 12px 12px}.soonsec .civ p{font-size:13px;margin:4px 0 0}}
